@@ -5,9 +5,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 import speech_recognition as sr
-import joblib
-import os
-import json
 import logging
 
 # Configure logging
