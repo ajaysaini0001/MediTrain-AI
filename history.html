@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - MediTrain AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">MediTrain AI</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/history" class="active">History</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Consultation History</h1>
+            <p>Review your previous consultations</p>
+        </header>
+
+        <main>
+            <div class="history-section">
+                {% if history %}
+                    {% for entry in history %}
+                    <div class="history-card">
+                        <div class="history-header">
+                            <span class="history-date">{{ entry.timestamp }}</span>
+                        </div>
+                        <div class="history-content">
+                            <div class="history-item">
+                                <strong>Symptoms:</strong>
+                                <p>{{ entry.symptoms }}</p>
+                            </div>
+                            <div class="history-item">
+                                <strong>Diagnosis:</strong>
+                                <p>{{ entry.disease }}</p>
+                            </div>
+                            <div class="history-item">
+                                <strong>Treatment:</strong>
+                                <p>{{ entry.treatment }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="no-history">
+                        <i class="fas fa-history"></i>
+                        <p>No consultation history available</p>
+                    </div>
+                {% endif %}
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MediTrain AI. For educational purposes only.</p>
+    </footer>
+</body>
+</html>

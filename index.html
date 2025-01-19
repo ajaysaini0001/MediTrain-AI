@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTrain AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">MediTrain AI</div>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/history">History</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>MediTrain AI</h1>
+            <p>Your Virtual Medical Assistant</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>Describe Your Symptoms</h2>
+                <div class="input-container">
+                    <textarea id="symptoms-input" placeholder="Enter your symptoms here..."></textarea>
+                    <button id="voice-input-btn" class="voice-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+                <button id="analyze-btn" class="primary-btn">Analyze Symptoms</button>
+            </div>
+
+            <div class="questions-section" style="display: none;">
+                <h2>Additional Questions</h2>
+                <div id="questions-container">
+                    <!-- Questions will be dynamically added here -->
+                </div>
+                <button id="submit-answers-btn" class="primary-btn">Submit Answers</button>
+            </div>
+
+            <div class="results-section" style="display: none;">
+                <div class="result-card">
+                    <h3>Possible Condition</h3>
+                    <div id="disease-result" class="result-content">
+                        <i class="fas fa-heartbeat"></i>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3>Recommended Treatment</h3>
+                    <div id="treatment-result" class="result-content">
+                        <i class="fas fa-pills"></i>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>This is an AI-powered prediction and should not replace professional medical advice. Please consult a healthcare provider for accurate diagnosis and treatment.</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="loading-overlay" style="display: none;">
+            <div class="loader"></div>
+            <p>Analyzing...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MediTrain AI. For educational purposes only.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

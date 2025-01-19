@@ -1,0 +1,55 @@
+Symptom,Question,Related_Symptoms
+headache,How would you rate your pain on a scale of 1-10?,pain_level
+headache,Is the pain concentrated in any specific area?,location
+headache,Are you experiencing any sensitivity to light or sound?,sensitivity
+fever,What is your current temperature?,temperature
+fever,Do you have any chills or sweating?,chills_sweating
+fever,How long have you had the fever?,duration
+chest pain,Is the pain sharp or dull?,pain_type
+chest pain,Does the pain radiate to other areas?,radiation
+chest pain,Does the pain increase with physical activity?,activity_relation
+joint pain,Which joints are affected?,affected_joints
+joint pain,Is there any swelling or redness?,swelling_redness
+joint pain,Does the pain worsen with movement?,movement_impact
+shortness of breath,Does it occur at rest or with activity?,trigger
+shortness of breath,Are you experiencing chest tightness?,chest_tightness
+shortness of breath,How long can you walk before feeling breathless?,endurance
+cough,Is the cough dry or productive?,cough_type
+cough,How long have you had the cough?,duration
+cough,Are you coughing up anything?,sputum
+stomach pain,Where exactly is the pain located?,pain_location
+stomach pain,Does eating affect the pain?,food_relation
+stomach pain,Have you noticed any changes in bowel movements?,bowel_changes
+skin rash,Is the rash itchy?,itchiness
+skin rash,How long have you had the rash?,duration
+skin rash,Has the rash spread since it first appeared?,spread
+dizziness,Do you feel like the room is spinning?,vertigo
+dizziness,Does changing positions make it worse?,positional
+dizziness,Are you experiencing any nausea?,associated_nausea
+fatigue,How is your sleep quality?,sleep_quality
+fatigue,Are you able to perform daily activities?,activity_level
+fatigue,Have you noticed any weight changes?,weight_changes
+nausea,Have you vomited?,vomiting
+nausea,Are you able to keep liquids down?,liquid_tolerance
+nausea,Is it related to eating?,food_relation
+back pain,Is the pain worse in the morning or evening?,time_pattern
+back pain,Does the pain shoot down your legs?,radiation
+back pain,What activities make it worse?,aggravating_factors
+vision problems,Are you seeing spots or floaters?,visual_disturbances
+vision problems,Is your vision blurry or double?,vision_type
+vision problems,Have you noticed any changes in color vision?,color_vision
+anxiety,Do you experience panic attacks?,panic_attacks
+anxiety,Are there specific triggers?,triggers
+anxiety,How is your sleep affected?,sleep_impact
+depression,How is your appetite?,appetite
+depression,Are you having trouble concentrating?,concentration
+depression,How is your energy level?,energy_level
+muscle weakness,Which muscles are affected?,affected_muscles
+muscle weakness,Is it worse at certain times?,timing_pattern
+muscle weakness,Can you perform regular activities?,functional_impact
+numbness,Which body parts are affected?,affected_areas
+numbness,Is it constant or intermittent?,pattern
+numbness,Do you feel tingling sensations?,tingling
+difficulty sleeping,Do you have trouble falling asleep or staying asleep?,sleep_pattern
+difficulty sleeping,Do you feel rested when you wake up?,rest_quality
+difficulty sleeping,Have you noticed any snoring?,snoring
